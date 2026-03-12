@@ -26,6 +26,7 @@ python password_generator.py
 - `--no-digits` — не включать цифры.
 - `--no-letters` — не включать буквы.
 - `--no-symbols` — не включать специальные символы.
+- `--word` — слово, которое будет включено в пароль и предварительно преобразовано в leet-стиль.
 
 ### Примеры
 
@@ -46,3 +47,10 @@ python password_generator.py -l 16 -n 5 --no-symbols
 ```bash
 python password_generator.py -l 10 -n 3 --no-letters --no-symbols
 ```
+
+Сгенерировать пароль длиной 12 символов с включённым словом (в leet-стиле):
+
+```bash
+python password_generator.py -l 12 --word example
+```
+
